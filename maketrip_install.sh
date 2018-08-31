@@ -1,17 +1,17 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='maketrip.conf'
-CONFIGFOLDER='/root/.maketrip'
+CONFIG_FILE='trip.conf'
+CONFIGFOLDER='/root/.trip'
 UBUNTU_VERSION=$(lsb_release -r | awk '{print $NF}' | sed -e 's/\.//')
-COIN_DAEMON='maketripd'
-COIN_CLI='maketrip-cli'
+COIN_DAEMON='tripd'
+COIN_CLI='trip-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ="https://github.com/zoldur/Maketrip/releases/download/v2.0.0.1/maketrip-${UBUNTU_VERSION}.tar.gz"
+COIN_TGZ="https://s3-us-west-2.amazonaws.com/tripwallets/9.1/zip/trip-linux-x64.tar.gz"
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Maketrip'
-COIN_PORT=12333
-RPC_PORT=12332
+COIN_NAME='Trip'
+COIN_PORT=40500
+RPC_PORT=41000
 
 NODEIP=$(curl -s4 api.ipify.org)
 

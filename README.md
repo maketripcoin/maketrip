@@ -1,18 +1,18 @@
-# Maketrip
-Shell script to install a [Maketrip Masternode](https://) on a Linux server running Ubuntu 14.04 or 16.04. Use it on your own risk.
+# Trip
+Shell script to install a [Trip Masternode](https://) on a Linux server running Ubuntu 14.04 or 16.04. Use it on your own risk.
 ***
 
 ## Installation
 ```
-wget -N https://raw.githubusercontent.com/zoldur/Maketrip/master/maketrip_install.sh
-bash maketrip_install.sh
+wget -N https://raw.githubusercontent.com/zoldur/Trip/master/trip_install.sh
+bash trip_install.sh
 ```
 ***
 
 ## Desktop wallet setup  
 
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
-1. Open the Maketrip Desktop Wallet.  
+1. Open the Trip Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
 3. Send **5000** MTRIP to **MN1**. You need to send all 5000 coins in one single transaction.
 4. Wait for 15 confirmations.  
@@ -38,23 +38,23 @@ masternode start-alias MN1
 ```
 14. Login to your VPS and check your masternode status by running the following command to confirm your MN is running:
 ```
-maketrip-cli masternode status
+trip-cli masternode status
 ```
 ***
 
 ## Usage:
 ```
-maketrip-cli masternode status
-maketrip-cli getinfo
-maketrip-cli mnsync status
+trip-cli masternode status
+trip-cli getinfo
+trip-cli mnsync status
 ```
-Also, if you want to check/start/stop **Maketrip**, run one of the following commands as **root**:
+Also, if you want to check/start/stop **Trip**, run one of the following commands as **root**:
 
 ```
-systemctl status Maketrip #To check if Maketrip service is running  
-systemctl start Maketrip #To start Maketrip service  
-systemctl stop Maketrip #To stop Maketrip service  
-systemctl is-enabled Maketrip #To check if Maketrip service is enabled on boot  
+systemctl status Trip #To check if Trip service is running  
+systemctl start Trip #To start Trip service  
+systemctl stop Trip #To stop Trip service  
+systemctl is-enabled Trip #To check if Trip service is enabled on boot  
 ```  
 ***
 
