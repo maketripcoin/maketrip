@@ -4,8 +4,8 @@ Shell script to install a [Trip Masternode](https://) on a Linux server running 
 
 ## Installation
 ```
-wget -N https://raw.githubusercontent.com/maketripcoin/tripscript/master/trip_install.sh
-bash trip_install.sh
+https://raw.githubusercontent.com/maketripcoin/tripscript/testnet/testnet_trip_install.sh
+bash testnet_trip_install.sh
 ```
 ***
 
