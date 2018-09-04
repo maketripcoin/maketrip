@@ -10,8 +10,8 @@ COIN_PATH='/usr/local/bin/'
 COIN_TGZ="https://github.com/maketripcoin/trip/releases/download/2.0.1/trip-linux-x64.tar.gz"
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Trip'
-COIN_PORT=41000
-RPC_PORT=40500
+COIN_PORT=40500
+RPC_PORT=41000
 
 NODEIP=$(curl -s4 api.ipify.org)
 
