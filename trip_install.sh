@@ -2,7 +2,7 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='trip.conf'
-CONFIGFOLDER='/root/.trip'
+CONFIGFOLDER='/root/.tripcoin'
 UBUNTU_VERSION=$(lsb_release -r | awk '{print $NF}' | sed -e 's/\.//')
 COIN_DAEMON='tripd'
 COIN_CLI='trip-cli'
@@ -124,17 +124,11 @@ listenonion=0
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=34.219.41.164
-whitelist=34.219.41.164
-addnode=52.40.179.237
-whitelist=52.40.179.237
 addnode=45.77.43.93
 addnode=45.76.155.30
-addnode=207.148.89.198
 addnode=45.77.135.50
 whitelist=45.77.43.93
 whitelist=45.76.155.30
-whitelist=207.148.89.198
 whitelist=45.77.135.50
 EOF
 }
